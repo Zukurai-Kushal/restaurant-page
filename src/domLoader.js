@@ -39,7 +39,168 @@ export function getHomePage(){
 };
 
 export function getMenuPage(){
-    return Node;
+    const menuPage = document.createElement('div');
+    menuPage.setAttribute('class','menu-page');
+    menuPage.innerHTML = 
+    `
+    <div class="food-menu-background">
+        <div class="food-menu">
+            <div class="title-card">
+                <h4><u>Menu</u><h4>
+                <h5>(v) Vegetarian, (gf) Gluten-free</h5>
+            </div>
+            <div class="food-card">
+                <section class="title">
+                    Bilbo's Scones
+                </section>
+                <section class="description">
+                    Warm scones served with clotted cream and jam (v)
+                </section>
+                <section class="availability">
+                    Breakfast
+                </section>
+            </div>
+            <div class="food-card">
+                <section class="title">
+                    Rivendell Trout
+                </section>
+                <section class="description">
+                    Pan-seared trout with lemon-dill sauce, served with wild rice (gf)
+                </section>
+                <section class="availability">
+                    Second Breakfast
+                </section>
+            </div>
+            <div class="food-card">
+                <section class="title">
+                    Treebeard's Salad
+                </section>
+                <section class="description">
+                    Mixed greens, cucumber, tomatoes, roasted nuts, aged Ent-draught vinaigrette (v, gf)
+                </section>
+                <section class="availability">
+                    Elevensies
+                </section>
+            </div>
+            <div class="food-card">
+                <section class="title">
+                    Rohirrim Lamb Stew
+                </section>
+                <section class="description">
+                    Tender lamb in a hearty vegetable broth, with crusty bread
+                </section>
+                <section class="availability">
+                    Luncheon
+                </section>
+            </div>
+            <div class="food-card">
+                <section class="title">
+                    Lembas Bread
+                </section>
+                <section class="description">
+                    Elvish waybread, served with honey and berry preserves (v)
+                </section>
+                <section class="availability">
+                    Afternoon Tea
+                </section>
+            </div>
+            <div class="food-card">
+                <section class="title">
+                    Mordor Beef Skewers
+                </section>
+                <section class="description">
+                    Spicy marinated beef with peppers and onions, served over basmati rice
+                </section>
+                <section class="availability">
+                    Dinner
+                </section>
+            </div>
+            <div class="food-card">
+                <section class="title">
+                    Shire Vegetable Pie
+                </section>
+                <section class="description">
+                    Assorted vegetables baked in a flaky pie crust, served with roasted garlic mash (v)
+                </section>
+                <section class="availability">
+                    Supper
+                </section>
+            </div>
+            <div class="food-card">
+                <section class="title">
+                    Ent-Wives' Apple Pie
+                </section>
+                <section class="description">
+                    Classic apple pie with a crispy oat topping (v)
+                </section>
+                <section class="availability">
+                    Dessert
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <div class="drink-menu-background">
+        <div class="drink-menu">
+            <div class="title-card">
+                <h4><u>Drink Menu</u><h4>
+            </div>
+            <div class="drink-card">
+                <section class="title">
+                    Ent-Draught
+                </section>
+                <section class="description">
+                    Herbal ale brewed onsite
+                </section>
+            </div>
+            <div class="drink-card">
+                <section class="title">
+                    Miruvor
+                </section>
+                <section class="description">
+                    Elvish cordial, non-alcoholic
+                </section>
+            </div>
+            <div class="drink-card">
+                <section class="title">
+                    Southfarthing Cider
+                </section>
+                <section class="description">
+                    Sweet and sparkling apple cider
+                </section>
+            </div>
+        
+            <div class="drink-card">
+                <section class="title">
+                    Prancing Pony Ale
+                </section>
+                <section class="description">
+                    House-brewed English-style ale
+                </section>
+            </div>
+        
+            <div class="drink-card">
+                <section class="title">
+                    Dorwinion Wine
+                </section>
+                <section class="description">
+                    Rich red wine from the Elvish vineyards
+                </section>
+            </div>
+        
+            <div class="drink-card">
+                <section class="title">
+                    Galadriel's Mead
+                </section>
+                <section class="description">
+                    Honey-sweetened mead, served chilled
+                </section>
+            </div>
+        
+        </div>
+    </div>
+    `;
+    return menuPage;
 };
 
 export function getLocationPage(){

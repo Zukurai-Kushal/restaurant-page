@@ -14,7 +14,7 @@ homeBtn.onclick = ()=>{
 
 menuBtn.onclick = ()=>{
     contentPage.textContent = '';
-    // contentPage.appendChild(getMenuPage());
+    contentPage.appendChild(getMenuPage());
 }
 
 locationBtn.onclick = ()=>{

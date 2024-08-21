@@ -191,6 +191,77 @@ p{
     line-height: 2;
 }
 
+.food-menu, .drink-menu{
+    width: 50%;
+    margin: 0 auto;
+    padding: 25px;
+    display: grid;
+    place-content: center;
+    text-align: center;
+    gap: 50px;
+}
+
+.food-menu{
+    background-color: var(--color-background);
+    border-left: 5px solid var(--color-highlight);
+    border-right: 5px solid var(--color-highlight);
+    border-radius: 5px;
+}
+
+.drink-menu-background{
+    margin: 25px 0;
+    padding: 25px 0;
+    background-image: url(../../global_resources/eye_sauron.gif);
+    background-position: center;
+}
+
+.drink-menu{
+    background-color: var(--color-black);
+    border-left: 5px solid var(--color-white);
+    border-right: 5px solid var(--color-white);
+    border-radius: 5px;
+    color: var(--color-white);
+}
+
+.food-menu .title-card h4,.drink-menu .title-card h4{
+    font-size: 2rem;
+}
+
+.food-menu .title-card h5{
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.food-card{
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.drink-card{
+    padding: 20px 80px;
+    border-radius: 5px;
+}
+
+.food-card:hover{
+    background-color: var(--color-highlight);
+}
+
+.drink-card:hover{
+    background-color: var(--color-dark-blue);
+}
+
+.food-card .title, .drink-card .title{
+    font-weight: 700;
+}
+
+.food-card .description{
+    font-size: 1.6rem;
+    font-family: "Bilbo", cursive;
+}
+
+.food-card .availability{
+    font-size: 0.8rem;
+}
 
 footer{
     background-color: var(--color-footer);
