@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Bilbo&display=swap');
+@font-face {
+    font-family: RingBearer;
+    src: url('../../global_resources/RingbearerMedium-51mgZ.ttf');
+}
+
+:root{
+    --color-background: #f8e8b5;
+    --color-black: #010101;
+    --color-dark-blue: #22353f;
+    --color-dark-tint: #01010162;
+    --color-highlight: #eb9866;
+    --color-footer: #386677;
+    --color-white: #fdfaf1;
+    scroll-behavior: smooth;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOutAnimation {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+body{
+    background-color: var(--color-background);
+    color: var(--color-black);
+    font-family: 'RingBearer';
+    font-size: 1rem;
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+header{
+    padding: 10px;
+    font-size: 2rem;
+    text-align: center;
+}
+
+header h1{
+    text-shadow: 5px 5px 0 var(--color-highlight);
+}
+
+nav{
+    margin: 20px auto;
+    font-size: 1rem;
+    max-width: 500px;
+}
+
+nav button{
+    color: currentColor;
+    border: none;
+    background-color: transparent;
+    padding: 10px 50px;
+    font-weight: 700;
+}
+
+nav button:hover{
+    background-color: var(--color-highlight);
+}
+
+.flex-col{
+    /* min-height: 100vh; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.flex-row{
+    height: 650px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+q{
+    font-family: "Bilbo", cursive;
+    font-size: 1.5em;
+}
+
+.smaller-font{
+    font-size: 0.75em;
+}
+
+.flex-row img{
+    height: 100%;
+    min-width: 30%;
+    object-fit: cover;
+}
+
+.cuisine-panel{
+    padding: 0 200px;
+    background-color: var(--color-dark-blue);
+    color: var(--color-white);
+    & img{
+        width: 100%;
+        object-fit: contain;
+    }
+}
+
+.side-text{
+    padding: 50px;
+    color: currentColor;
+    font-size: 3.5rem;
+    font-weight: 700;
+    flex: auto;
+    text-align: center;
+}
+
+@keyframes floating{
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-10px);
+    }
+    100%{
+        transition: translateY(0px);
+    }
+}
+
+.down-icon{
+    position: sticky;
+    width: 80px;
+    bottom: 50px;
+    animation: floating 1s ease-in-out infinite;
+}
+
+.down-icon:hover{
+    animation: none;
+}
+
+.down-icon:hover svg{
+    fill: var(--color-highlight);
+}
+
+#content .restaurant-img{
+    z-index: -1;
+    position: relative;
+    background-image: url('../../global_resources/shire.jpg');
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: -300px;
+    background-size: 1200px;
+    height: 750px;
+    width: 100%;
+}
+
+.wide-container{
+    position: relative;
+    width: 100%;
+    height: 650px;
+}
+
+.img-background{
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.captions{
+    position: absolute;
+    width: 100%;
+    color: var(--color-white);
+    font-size: 4rem;
+    font-weight: 700;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: 5px 5px 0 var(--color-highlight);
+    text-align: center;
+}
+
+p{
+    max-inline-size: 66ch;
+    line-height: 2;
+}
+
+
+footer{
+    background-color: var(--color-footer);
+    color: var(--color-white);
+    font-size: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    text-align: center;
+}
+
+footer a{
+    color: currentColor;
+    text-decoration: none;
+}
+
+footer a:hover{
+    color: var(--color-highlight);
+}
+
+#footer-left, #footer-right{
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 337px;
+    height: 450px;
+    position: absolute;
+    bottom: -25px;
+}
+
+#footer-left{
+    background-image: url(../../global_resources/argonath_left.png);
+    background-position: left;
+    left: 0;
+}
+
+#footer-right{
+    background-image: url(../../global_resources/argonath_right.png);
+    background-position: right;
+    right: 0;
+}
+
+#footer-middle{
+    flex: auto;
+    align-self: flex-end;
+}
+
+
