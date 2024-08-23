@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bilbo&display=swap');
 @font-face {
     font-family: RingBearer;
-    src: url('../../global_resources/RingbearerMedium-51mgZ.ttf');
+    src: url('./RingbearerMedium-51mgZ.ttf');
 }
 
 :root{
@@ -105,10 +105,11 @@ q{
     padding: 0 200px;
     background-color: var(--color-dark-blue);
     color: var(--color-white);
-    & img{
-        width: 100%;
-        object-fit: contain;
-    }
+}
+
+.cuisine-panel img{
+    width: 100%;
+    object-fit: contain;
 }
 
 .side-text{
@@ -288,9 +289,9 @@ p{
     max-inline-size: 33ch;
     font-weight: 700;
     color: var(--color-dark-blue);
-    & svg{
-        fill: var(--color-footer);
-    }
+}
+.location-info .text-info section svg{
+    fill: var(--color-footer);
 }
 
 .location-info .text-info table{
@@ -375,9 +376,10 @@ p{
     position: absolute;
     right: 20px;
     top: 20px;
-    & svg{
-        fill: var(--color-white);
-    }
+}
+
+#close-credits-button svg{
+    fill: var(--color-white);
 }
 
 #close-credits-button:hover{
@@ -447,9 +449,10 @@ p{
     display: flex;
     align-items: center;
     gap: 5px;
-    & svg{
-        width: 25px;
-    }
+}
+
+#reservation-form label svg{
+    width: 25px;
 }
 
 #reservation-form input, #reservation-form select, #reservation-form textarea{
