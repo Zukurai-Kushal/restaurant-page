@@ -214,6 +214,7 @@ p{
     padding: 25px 0;
     background-image: url(../../global_resources/eye_sauron.gif);
     background-position: center;
+    background-size: 38%;
 }
 
 .drink-menu{
@@ -315,10 +316,11 @@ p{
     height: 750px;
     width: 100%;
     margin-bottom: 45px;
+    position: relative;
 }
 
 .reservation-container section{
-    position: relative;
+    position: absolute;
     top: 20%;
     left: 20%;
     color: var(--color-white);
@@ -329,9 +331,9 @@ p{
 }
 
 #reservation-button{
-    position: relative;
+    position: absolute;
     padding: 8px 50px;
-    top: 40%;
+    top: 60%;
     left: 20%;
     font-size: 1.5rem;
     font-weight: 700;
