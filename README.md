@@ -3,7 +3,7 @@
 Welcome to **The Hobbit Hole!** A fictional fantasy restaurant website set in Middle-Earth.
 Here you will find my appreciation for the love of food Hobbits have within Tolkien's universe.
 So get ready to fill your belly within the cozy homestead of the shire,
-but be sure to make a reservation for parties of dwarves have been known to fill the restaurant without announcement!
+but be sure to make a reservation, for parties of dwarves have been known to fill the restaurant without announcement!
 
 ![Application Screenshot](./gallery/the-hobbit-hole-screenshot.png)
 
@@ -21,4 +21,4 @@ but be sure to make a reservation for parties of dwarves have been known to fill
 
 ## Live Preview
 
-Click [here](https://zukurai-kushal.github.io/calculator/) to view the live page.
+Click [here](https://zukurai-kushal.github.io/restaurant-page/) to view the live page.
